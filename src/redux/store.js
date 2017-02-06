@@ -5,8 +5,6 @@ import createLogger from 'redux-logger';
 import rootReducer from './reducers/index';
 
 const loggerMiddleware = createLogger();
-
-
 const createStoreWithNavigation = createNavigationEnabledStore(createStore);
 
 const store = createStoreWithNavigation(

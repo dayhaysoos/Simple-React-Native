@@ -1,4 +1,4 @@
-package com.t7chickennative;
+package com.simplereactnative;
 
 import android.app.Application;
 import android.util.Log;

@@ -23,14 +23,22 @@ const navigationContext = new NavigationContext({
   store
 });
 
-
 const App = () => (
   <Provider store={store}>
     <NavigationProvider context={navigationContext}>
-      <StackNavigation id="home" initialRoute={Router.getRoute('home')} />
+      <StackNavigation style={Styles.container} id="home" initialRoute={Router.getRoute('home')} />
     </NavigationProvider>
   </Provider>
 );
+
+const Styles = StyleSheet.create({
+  container: {
+		paddingTop: 30,
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  }
+});
 
 
 AppRegistry.registerComponent('t7ChickenNative', () => (App));

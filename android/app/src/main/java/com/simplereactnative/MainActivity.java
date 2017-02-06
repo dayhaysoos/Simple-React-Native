@@ -1,4 +1,4 @@
-package com.t7chickennative;
+package com.simplereactnative;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "t7ChickenNative";
+        return "SimpleReactNative";
     }
 }
